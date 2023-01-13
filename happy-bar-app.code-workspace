@@ -1,0 +1,31 @@
+{
+  "folders": [
+    {
+      "path": "."
+    },
+    {
+      "path": "..\\..\\Cart"
+    },
+    {
+      "path": "..\\demo-app"
+    },
+    {
+      "path": "..\\counter-app"
+    },
+    {
+      "path": "..\\my-app"
+    },
+    {
+      "path": "..\\react-task-tracker"
+    },
+    {
+      "path": "..\\tester"
+    },
+    {
+      "path": "..\\testone"
+    }
+  ],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "Cart"
+  }
+}

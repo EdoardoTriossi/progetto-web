@@ -1,0 +1,27 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Start",
+      "dependsOn": ["npm: start", "npm: json-server start"],
+      "dependsOrder": "parallel",
+      "group": "build",
+      "problemMatcher": ["$tsc-watch"],
+      "isBackground": true
+    },
+    {
+      "type": "npm",
+      "script": "start",
+      "problemMatcher": [],
+      "label": "npm: start",
+      "detail": "react-scripts start"
+    },
+    {
+      "type": "npm",
+      "script": "server",
+      "problemMatcher": [],
+      "label": "npm: json-server start",
+      "detail": "react-scripts jspon server start"
+    }
+  ]
+}
