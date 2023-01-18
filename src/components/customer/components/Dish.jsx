@@ -7,6 +7,8 @@ import Row from "react-bootstrap/Row";
 import Stack from "react-bootstrap/Stack";
 import { getImage } from "src/utilities/getImage";
 
+//ciao sono qui
+
 function Dish({ dish, onIncrement, onDecrement, onClear }) {
   return (
     <div style={{ backgroundColor: ".bg-light" }}>
