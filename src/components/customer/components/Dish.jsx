@@ -11,7 +11,9 @@ function Dish({ dish, onIncrement, onDecrement, onClear }) {
   return (
     <div style={{ backgroundColor: ".bg-light" }}>
       <Card>
-        <Card.Header className="text-center">{dish.title}</Card.Header>
+        <Card.Header className="text-center" style={{ color: "red" }}>
+          {dish.title}
+        </Card.Header>
         <Card.Img
           variant="top"
           src={getImage(dish.image)}
