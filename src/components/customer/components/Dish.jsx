@@ -50,7 +50,9 @@ function Dish({ dish, onIncrement, onDecrement, onClear }) {
                 </Stack>
               </Col>
               <Col>
-                <p className="pricing-card-title">Prezzo: € {dish.price}</p>
+                <p className="pricing-card-title" style={{ color: "red" }}>
+                  Prezzo: € {dish.price}
+                </p>
               </Col>
               <Col>
                 <p className="h3">Nr: {dish.quantity}</p>
