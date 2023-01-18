@@ -15,10 +15,10 @@ function Dish({ dish, onIncrement, onDecrement, onClear }) {
         <Card.Img
           variant="top"
           src={getImage(dish.image)}
-          style={{ width: "100%", height: "30vw", objectFit: "cover" }}
+          style={{ width: "100%", height: "30vh", objectFit: "cover" }}
         ></Card.Img>
-        <Card.Body style={{ height: "30vw" }}>
-          <ListGroup className="list-group-flush">
+        <Card.Body style={{ height: "10%" }}>
+          <ListGroup className="list-group-flush" style={{ height: "5%" }}>
             <ListGroup.Item>{dish.ingredientsIT}</ListGroup.Item>
             <ListGroup.Item>{dish.ingredientsEN}</ListGroup.Item>
           </ListGroup>
