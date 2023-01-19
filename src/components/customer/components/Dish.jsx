@@ -12,24 +12,40 @@ import { getImage } from "src/utilities/getImage";
 function Dish({ dish, onIncrement, onDecrement, onClear }) {
   return (
     <div style={{ backgroundColor: ".bg-light" }}>
-      <Card>
+      <Card style={{ height: "100%" }}>
         <Card.Header className="text-center" style={{ color: "red" }}>
           {dish.title}
         </Card.Header>
         <Card.Img
           variant="top"
           src={getImage(dish.image)}
-          style={{ width: "100%", height: "400px", objectFit: "cover" }}
+          style={{ width: "100%", height: "350px", objectFit: "cover" }}
         ></Card.Img>
         <Card.Body>
-          <ListGroup className="list-group-flush" style={{ height: "40%", textAlignVertical: "center", textAlign: "center" }}>
-            <ListGroup.Item>{dish.ingredientsIT}</ListGroup.Item>
-            <ListGroup.Item>{dish.ingredientsEN}</ListGroup.Item>
+          <ListGroup
+            className="list-group-flush"
+            style={{
+              height: "50%",
+              textAlignVertical: "center",
+              textAlign: "center",
+            }}
+          >
+            <ListGroup.Item style={{ height: "50%" }}>
+              {dish.ingredientsIT}
+            </ListGroup.Item>
+            <ListGroup.Item style={{ height: "50%" }}>
+              {dish.ingredientsEN}
+            </ListGroup.Item>
           </ListGroup>
           <Container fluid="true">
-            <Row className="mb-x">
+            <Row
+              className="mb-x"
+              style={{
+                paddingLeft: "7%",
+              }}
+            >
               <Col className="mb-3">
-                <Stack direction="horizontal" style={{padding: "1%"}}>
+                <Stack direction="horizontal">
                   <Button
                     variant="primary"
                     className="m-2"
@@ -53,13 +69,35 @@ function Dish({ dish, onIncrement, onDecrement, onClear }) {
                   </Button>
                 </Stack>
               </Col>
-              <Col style={{ padding: "1%", textAlignVertical: "center", textAlign: "center" }}>
+              <Col
+                style={{
+                  padding: "4%",
+                  textAlignVertical: "center",
+                  textAlign: "center",
+                }}
+              >
                 <p className="pricing-card-title">Prezzo: € {dish.price}</p>
               </Col>
-              <Col style={{ padding: "1%", textAlignVertical: "center", textAlign: "center" }}>
+            </Row>
+            <Row>
+              {" "}
+              <Col
+                style={{
+                  padding: "1%",
+                  paddingRight: "7%",
+                  textAlignVertical: "center",
+                  textAlign: "center",
+                }}
+              >
                 <p className="h3">Nr: {dish.quantity}</p>
               </Col>
-              <Col style={{ padding: "1%", textAlignVertical: "center", textAlign: "center" }}>
+              <Col
+                style={{
+                  padding: "1%",
+                  textAlignVertical: "center",
+                  textAlign: "center",
+                }}
+              >
                 <p className="pricing-card-title">
                   Total: € {parseInt(dish.quantity) * parseInt(dish.price)}
                 </p>
