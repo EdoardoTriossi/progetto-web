@@ -7,6 +7,8 @@ import Row from "react-bootstrap/Row";
 import Stack from "react-bootstrap/Stack";
 import { getImage } from "src/utilities/getImage";
 
+//ciao sono qui
+
 function Dish({ dish, onIncrement, onDecrement, onClear }) {
   return (
     <div style={{ backgroundColor: ".bg-light" }}>
@@ -17,17 +19,17 @@ function Dish({ dish, onIncrement, onDecrement, onClear }) {
         <Card.Img
           variant="top"
           src={getImage(dish.image)}
-          style={{ width: "100%", height: "30vh", objectFit: "cover" }}
+          style={{ width: "100%", height: "400px", objectFit: "cover" }}
         ></Card.Img>
-        <Card.Body style={{ height: "10%" }}>
-          <ListGroup className="list-group-flush" style={{ height: "5%" }}>
+        <Card.Body>
+          <ListGroup className="list-group-flush" style={{ height: "40%", textAlignVertical: "center", textAlign: "center" }}>
             <ListGroup.Item>{dish.ingredientsIT}</ListGroup.Item>
             <ListGroup.Item>{dish.ingredientsEN}</ListGroup.Item>
           </ListGroup>
           <Container fluid="true">
             <Row className="mb-x">
               <Col className="mb-3">
-                <Stack direction="horizontal">
+                <Stack direction="horizontal" style={{padding: "1%"}}>
                   <Button
                     variant="primary"
                     className="m-2"
@@ -51,13 +53,13 @@ function Dish({ dish, onIncrement, onDecrement, onClear }) {
                   </Button>
                 </Stack>
               </Col>
-              <Col>
+              <Col style={{ padding: "1%", textAlignVertical: "center", textAlign: "center" }}>
                 <p className="pricing-card-title">Prezzo: € {dish.price}</p>
               </Col>
-              <Col>
+              <Col style={{ padding: "1%", textAlignVertical: "center", textAlign: "center" }}>
                 <p className="h3">Nr: {dish.quantity}</p>
               </Col>
-              <Col>
+              <Col style={{ padding: "1%", textAlignVertical: "center", textAlign: "center" }}>
                 <p className="pricing-card-title">
                   Total: € {parseInt(dish.quantity) * parseInt(dish.price)}
                 </p>
