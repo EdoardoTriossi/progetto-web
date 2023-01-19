@@ -57,7 +57,7 @@ function ReactInfo() {
             </p>
           </div>
           <div className="col">
-            <h3>React è flesibile</h3>
+            <h3>React è flessibile</h3>
             <p>
               <ul>
                 <li>
