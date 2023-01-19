@@ -6,14 +6,13 @@ import ListGroup from "react-bootstrap/ListGroup";
 import Row from "react-bootstrap/Row";
 import Stack from "react-bootstrap/Stack";
 import { getImage } from "src/utilities/getImage";
-
-//ciao sono qui
+import "src/index.css";
 
 function Dish({ dish, onIncrement, onDecrement, onClear }) {
   return (
     <div style={{ backgroundColor: ".bg-light" }}>
       <Card>
-        <Card.Header className="text-center" style={{ color: "red" }}>
+        <Card.Header className="text-center" style={{ color: "red", fontFamily: "dogicapixel"}}>
           {dish.title}
         </Card.Header>
         <Card.Img
@@ -22,9 +21,9 @@ function Dish({ dish, onIncrement, onDecrement, onClear }) {
           style={{ width: "100%", height: "400px", objectFit: "cover" }}
         ></Card.Img>
         <Card.Body>
-          <ListGroup className="list-group-flush" style={{ height: "40%", textAlignVertical: "center", textAlign: "center" }}>
-            <ListGroup.Item>{dish.ingredientsIT}</ListGroup.Item>
-            <ListGroup.Item>{dish.ingredientsEN}</ListGroup.Item>
+          <ListGroup className="list-group-flush" style={{ height: "40%", textAlignVertical: "center", textAlign: "center"}}>
+            <ListGroup.Item style={{ fontFamily: "dogicapixel"}}>{dish.ingredientsIT}</ListGroup.Item>
+            <ListGroup.Item style={{ fontFamily: "dogicapixel"}}>{dish.ingredientsEN}</ListGroup.Item>
           </ListGroup>
           <Container fluid="true">
             <Row className="mb-x">
@@ -54,13 +53,13 @@ function Dish({ dish, onIncrement, onDecrement, onClear }) {
                 </Stack>
               </Col>
               <Col style={{ padding: "1%", textAlignVertical: "center", textAlign: "center" }}>
-                <p className="pricing-card-title">Prezzo: € {dish.price}</p>
+                <p className="pricing-card-title" style={{ fontFamily: "dogicapixel"}}>Prezzo: € {dish.price}</p>
               </Col>
               <Col style={{ padding: "1%", textAlignVertical: "center", textAlign: "center" }}>
-                <p className="h3">Nr: {dish.quantity}</p>
+                <p className="h3" style={{ fontFamily: "dogicapixel"}}>Nr: {dish.quantity}</p>
               </Col>
               <Col style={{ padding: "1%", textAlignVertical: "center", textAlign: "center" }}>
-                <p className="pricing-card-title">
+                <p className="pricing-card-title" style={{ fontFamily: "dogicapixel"}}>
                   Total: € {parseInt(dish.quantity) * parseInt(dish.price)}
                 </p>
               </Col>
