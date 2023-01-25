@@ -57,6 +57,24 @@
         "ingredientsEN": "Ingredients: meat, vegetables and noodles",
         "price": 12,
         "quantity": 0
+      },
+      {
+        "id": 7,
+        "title": "Eevee cake",
+        "image": "Photo-IG-copy-1024x1024.jpeg",
+        "ingredientsIT": "Ingredienti: quelli di una torta (sorpresa)",
+        "ingredientsEN": "Ingredients: those of a cake (surprise)",
+        "price": 12,
+        "quantity": 0
+      },
+      {
+        "id": 8,
+        "title": "Pikachu plate",
+        "image": "photo_food01_02.jpg",
+        "ingredientsIT": "Ingredienti: polenta, pesce fritto, carne, verdure fritte",
+        "ingredientsEN": "Ingredients: polenta, fried fish, meat, fried vegetables",
+        "price": 13,
+        "quantity": 0
       }
     ]
   },

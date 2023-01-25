@@ -6,14 +6,22 @@ import ListGroup from "react-bootstrap/ListGroup";
 import Row from "react-bootstrap/Row";
 import Stack from "react-bootstrap/Stack";
 import { getImage } from "src/utilities/getImage";
+import "../HappyBarCustomer.css";
 import "src/index.css";
 
 function Dish({ dish, onIncrement, onDecrement, onClear }) {
   return (
     <div style={{ backgroundColor: ".bg-light" }}>
       <Card style={{ height: "100%" }}>
-        <Card.Header className="text-center" style={{ color: "red", fontFamily: "dogicapixel"}}>
-          {dish.title}
+        <Card.Header 
+          className="text-center" 
+          style={{ 
+            height: "100px", 
+            alignItems: "center", 
+            display: "flex",
+            justifyContent: "center",
+            }}>
+          <h3> {dish.title}</h3>
         </Card.Header>
         <Card.Img
           variant="top"
@@ -25,15 +33,14 @@ function Dish({ dish, onIncrement, onDecrement, onClear }) {
             className="list-group-flush"
             style={{
               height: "50%",
-              textAlignVertical: "center",
               textAlign: "center",
             }}
           >
-            <ListGroup.Item style={{ height: "50%", fontFamily: "dogicapixel", }}>
-              {dish.ingredientsIT}
+            <ListGroup.Item style={{ height: "50%" }}>
+              <p>{dish.ingredientsIT}</p>
             </ListGroup.Item>
-            <ListGroup.Item style={{ height: "50%", fontFamily: "dogicapixel", }}>
-              {dish.ingredientsEN}
+            <ListGroup.Item style={{ height: "50%" }}>
+              <p>{dish.ingredientsEN}</p>
             </ListGroup.Item>
           </ListGroup>
           <Container fluid="true">
@@ -41,6 +48,7 @@ function Dish({ dish, onIncrement, onDecrement, onClear }) {
               className="mb-x"
               style={{
                 paddingLeft: "7%",
+                paddingTop: "3%",
               }}
             >
               <Col className="mb-3">
@@ -75,7 +83,7 @@ function Dish({ dish, onIncrement, onDecrement, onClear }) {
                   textAlign: "center",
                 }}
               >
-                <p className="pricing-card-title" style={{ fontFamily: "dogicapixel" }}>Prezzo: € {dish.price}</p>
+                <p>Prezzo: € {dish.price}</p>
               </Col>
             </Row>
             <Row>
@@ -88,7 +96,7 @@ function Dish({ dish, onIncrement, onDecrement, onClear }) {
                   textAlign: "center",
                 }}
               >
-                <p className="h3" style={{ fontFamily: "dogicapixel" }}>Nr: {dish.quantity}</p>
+                <h3>Nr: {dish.quantity}</h3>
               </Col>
               <Col
                 style={{
@@ -97,7 +105,7 @@ function Dish({ dish, onIncrement, onDecrement, onClear }) {
                   textAlign: "center",
                 }}
               >
-                <p className="pricing-card-title" style={{ fontFamily: "dogicapixel" }}>
+                <p className="pricing-card-title">
                   Total: € {parseInt(dish.quantity) * parseInt(dish.price)}
                 </p>
               </Col>
