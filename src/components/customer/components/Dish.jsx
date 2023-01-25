@@ -13,7 +13,14 @@ function Dish({ dish, onIncrement, onDecrement, onClear }) {
   return (
     <div style={{ backgroundColor: ".bg-light" }}>
       <Card style={{ height: "100%" }}>
-        <Card.Header className="text-center" style={{ height: "10%" }}>
+        <Card.Header 
+          className="text-center" 
+          style={{ 
+            height: "100px", 
+            alignItems: "center", 
+            display: "flex",
+            justifyContent: "center",
+            }}>
           <h3> {dish.title}</h3>
         </Card.Header>
         <Card.Img
@@ -26,7 +33,6 @@ function Dish({ dish, onIncrement, onDecrement, onClear }) {
             className="list-group-flush"
             style={{
               height: "50%",
-              textAlignVertical: "center",
               textAlign: "center",
             }}
           >
