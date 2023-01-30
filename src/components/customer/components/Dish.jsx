@@ -16,10 +16,11 @@ function Dish({ dish, onIncrement, onDecrement, onClear }) {
         <Card.Header 
           className="text-center" 
           style={{ 
-            height: "100px", 
+            height: "90px", 
             alignItems: "center", 
             display: "flex",
             justifyContent: "center",
+            paddingTop: "20px",
             }}>
           <h3> {dish.title}</h3>
         </Card.Header>
@@ -37,10 +38,10 @@ function Dish({ dish, onIncrement, onDecrement, onClear }) {
             }}
           >
             <ListGroup.Item style={{ height: "50%" }}>
-              <p>{dish.ingredientsIT}</p>
+              <p style={{ paddingTop: "2%", }}>{dish.ingredientsIT}</p>
             </ListGroup.Item>
             <ListGroup.Item style={{ height: "50%" }}>
-              <p>{dish.ingredientsEN}</p>
+              <p style={{ paddingTop: "2%", }}>{dish.ingredientsEN}</p>
             </ListGroup.Item>
           </ListGroup>
           <Container fluid="true">
@@ -79,7 +80,7 @@ function Dish({ dish, onIncrement, onDecrement, onClear }) {
               <Col
                 style={{
                   padding: "4%",
-                  textAlignVertical: "center",
+                  //textAlignVertical: "center",
                   textAlign: "center",
                 }}
               >
@@ -92,7 +93,7 @@ function Dish({ dish, onIncrement, onDecrement, onClear }) {
                 style={{
                   padding: "1%",
                   paddingRight: "7%",
-                  textAlignVertical: "center",
+                  //textAlignVertical: "center",
                   textAlign: "center",
                 }}
               >
@@ -101,7 +102,7 @@ function Dish({ dish, onIncrement, onDecrement, onClear }) {
               <Col
                 style={{
                   padding: "1%",
-                  textAlignVertical: "center",
+                  //textAlignVertical: "center",
                   textAlign: "center",
                 }}
               >
