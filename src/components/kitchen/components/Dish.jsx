@@ -6,7 +6,7 @@ import ListGroup from "react-bootstrap/ListGroup";
 import Row from "react-bootstrap/Row";
 import Stack from "react-bootstrap/Stack";
 import { getImage } from "src/utilities/getImage";
-import "../HappyBarKitchen.css";
+import "../../HappyBar.css";
 import "src/index.css";
 
 function Dish({ dish, onIncrement, onDecrement, onClear }) {

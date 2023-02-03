@@ -13,6 +13,7 @@ const reactInfoInfo = {
   title: "React framework",
   subTitle: "How it works",
   image: getImage(imageName),
+  button: "To know more",
 };
 
 function ReactInfo() {
@@ -24,22 +25,26 @@ function ReactInfo() {
       <section className="React">
         <h1>Storia</h1>
         <p>
-          <ul>
-            <li>2011: Creata da Facebook.</li>
-            <li>2012: Utilizzata da Instagram.</li>
-            <li>2013: Facebook la rende open source.</li>
-            <li>2014: inizia l'adozione da parte di grandi compagnie.</li>
-            <li>
-              2015: Facebook rende open source React Native, per Android e iOS.
-            </li>
-            <li>
-              2016: uso di Semantic Versioning nel rilascio dei componenti che
+          <dl>
+            <dt>2011</dt>
+            <dd>Creata da Facebook.</dd>
+            <dt>2012</dt>
+            <dd>Utilizzata da Instagram.</dd>
+            <dt>2013</dt>
+            <dd>Facebook la rende open source.</dd>
+            <dt>2014</dt>
+            <dd>Inizia l'adozione da parte di grandi compagnie.</dd>
+            <dt>2015</dt>
+            <dd>Facebook rende open source React Native, per Android e iOS.</dd>
+            <dt>2016</dt>
+            <dd>
+              Uso di Semantic Versioning nel rilascio dei componenti che
               permette di rilasciare o upgradare I package senza rilasciare
               nuove versioni dei pachetti dipendenti. Al giorno d'oggi molte
               delle aziende Fortune 500 lo utilizzano. Facebook ha un team per
               lo sviluppo e manutenzione.
-            </li>
-          </ul>
+            </dd>
+          </dl>
         </p>
 
         <div className="row">
@@ -181,14 +186,14 @@ function ReactInfo() {
 
           <h3>Conclusioni</h3>
           <p>
-            <ul>
-              <li>
+            <dl>
+              <dd>
                 React è eccellente per creare applicazioni su qualunque
                 piattaforma.
-              </li>
-              <li>È utilizzato nella stragrande maggioranza delle app.</li>
-              <li> E' ottimamente supportato.</li>
-            </ul>
+              </dd>
+              <dd>È utilizzato nella stragrande maggioranza delle app.</dd>
+              <dd> E' ottimamente supportato.</dd>
+            </dl>
           </p>
         </div>
       </section>

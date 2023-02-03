@@ -28,6 +28,7 @@ const aboutInfo = {
   title: "About",
   subTitle: "",
   image: getImage(imageName),
+  button: "To know absolutely nothing",
 };
 function About() {
   return (

@@ -43,6 +43,7 @@
   text-align: center;
   font-weight: 600;
   margin: 10px 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .whyUseFramework .col:hover {
@@ -61,14 +62,14 @@
   width: 80%;
   margin: auto;
   text-align: center;
-  padding-top: 50px;
+  padding-top: 25px;
 }
 
 .mostUsedFramework h1 {
   font-size: 36px;
   font-weight: 600;
 }
-
+/* non esiste più
 .mostUsedFramework p {
   color: #777;
   font-size: 14px;
@@ -76,9 +77,10 @@
   line-height: 22px;
   padding: 10px;
 }
-
+*/
 .mostUsedFramework .row {
   margin-top: 5%;
+  margin-bottom: 5%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -88,7 +90,6 @@
 .mostUsedFramework .col {
   flex-basis: 32%;
   border-radius: 10px;
-  margin-bottom: 30%;
   position: relative;
   overflow: hidden;
 }
@@ -141,8 +142,63 @@
 .frameworkPopularity {
   width: 80%;
   margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
   text-align: center;
-  padding-top: 50px;
+  padding-top: 25px;
+}
+
+.frameworkPopularity h1 {
+  font-size: 36px;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+.frameworkPopularity p {
+  color: #777;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+
+.frameworkPopularity .row {
+  flex-basis: 31%;
+  background: #fff3f3;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+.frameworkPopularity .row:hover {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.frameworkPopularity .row h2 {
+  font-size: 26px;
+  font-weight: 400;
+}
+
+.frameworkPopularity .row img {
+  width: 100%;
+}
+
+@media (max-width: 700px) {
+  .frameworkPopularity .row img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+/*
+.frameworkPopularity {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 5%;
 }
 
 .frameworkPopularity h1 {
@@ -183,3 +239,22 @@
     height: 100%;
   }
 }
+*/
+/*font generici delle pagine*/
+
+p{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h3{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
