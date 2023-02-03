@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import Button from "react-bootstrap/Button";
+import "../../HappyBar.css";
 
 const Header = ({ title, buttonText, total, enabled, onClick }) => {
   return (

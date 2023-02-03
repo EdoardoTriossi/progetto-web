@@ -5,13 +5,14 @@ import NavBar from "../NavBar";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Order from "./components/Order";
-import "./HappyBarKitchen.css";
+import "../HappyBar.css";
 
 const imageName = "happyBarKitchenBackgroundImage.jpg";
 const headerInfo = {
   title: "Happy bar dashboard",
   subTitle: "Happy bar dashboard",
   image: getImage(imageName),
+  button: "Cucina!",
 };
 
 function HappyBarKitchen() {

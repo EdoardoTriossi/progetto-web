@@ -29,13 +29,13 @@
 }
 
 @font-face {
-  font-family: "pkmnHollow";
+  font-family: "pokemonHollow";
   src: local("PokemonHollow"),
     url("./fonts/PokemonHollow.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "pkmnSolid";
+  font-family: "pokemonSolid";
   src: local("PokemonSolid"),
     url("./fonts/PokemonSolid.ttf") format("truetype");
 }

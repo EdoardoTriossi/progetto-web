@@ -59,7 +59,7 @@ const NavBar = ({ info }) => {
           <h1>{info.title}</h1>
           <p>{info.subTitle}</p>
           <a href="#hero-btn" className="hero-btn">
-            To know more
+            {info.button}
           </a>
         </div>
         <a className="backward" href="#top">

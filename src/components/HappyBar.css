@@ -10,6 +10,7 @@
   font-family: 'Poppins', sans-serif;
 } */
 
+
 .happy-bar-container {
   box-sizing: border-box;
   margin: 0;
@@ -87,3 +88,22 @@ footer {
   margin-top: 30px;
   text-align: center;
 }
+
+.happy-bar-container h3{
+
+  color: red;
+  font-family: dogicapixel;
+}
+
+.happy-bar-container p {
+  font-family: dogicapixel;
+}
+
+.happy-bar-container Header{
+  font-family: dogicapixel;
+}
+
+.happy-bar-container h1{
+  font-family: pokemonSolid;
+}
+

@@ -13,6 +13,7 @@ const headerInfo = {
   title: "Web developing using a framework",
   subTitle: "Why use a framework and what to use",
   image: getImage(imageName),
+  button: "To know more",
 };
 
 function Home() {
@@ -133,12 +134,6 @@ function Home() {
       {/* mostUsedFramework */}
       <section className="mostUsedFramework">
         <h1>Most popular frameworks</h1>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro dicta
-          quis id magni harum non omnis, blanditiis, dolorem, delectus
-          necessitatibus exercitationem nisi ut. Aspernatur, mollitia tenetur!
-          Aliquam magnam error facilis.
-        </p>
         <div className="row">
           <a href="https://github.com/facebook/react" className="col">
             <img src={getImage(reactLogo)} alt="React" />
@@ -163,19 +158,10 @@ function Home() {
       {/* frameworkPopularity */}
       <section className="frameworkPopularity">
         <h1>Frameworks popularity</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam iure,
-          laboriosam molestiae, id voluptas, fuga ipsam accusamus quaerat
-          ratione adipisci ex architecto provident ad neque porro illo
-          praesentium libero recusandae?
-        </p>
         <div className="row">
           <h2>Google trends</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
-            iure, laboriosam molestiae, id voluptas, fuga ipsam accusamus
-            quaerat ratione adipisci ex architecto provident ad neque porro illo
-            praesentium libero recusandae?
+            cosa cè nel grafico, e che aggiornato
           </p>
           <a href="https://trends.google.it/trends/explore?date=today%2012-m,today%2012-m,today%2012-m&geo=,,&q=%2Fm%2F012l1vxv,%2Fg%2F11c6w0ddw9,%2Fg%2F11c0vmgx5d">
             <img src={getImage(googleTrends)} alt="" />
@@ -185,10 +171,7 @@ function Home() {
         <div className="row">
           <h2>Stack Overflow Trends</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
-            iure, laboriosam molestiae, id voluptas, fuga ipsam accusamus
-            quaerat ratione adipisci ex architecto provident ad neque porro illo
-            praesentium libero recusandae?
+            numero di ricerche fatte per ciascun framework con stack Overflow
           </p>
           <a href="https://insights.stackoverflow.com/trends?tags=reactjs%2Cangular%2Cvue.js">
             <img src={getImage(stackoverflowTrends)} alt="" />

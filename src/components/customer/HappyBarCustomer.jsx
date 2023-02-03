@@ -5,13 +5,14 @@ import NavBar from "../NavBar";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Order from "./components/Order";
-import "./HappyBarCustomer.css";
+import "../HappyBar.css";
 
 const imageName = "happyBarCustomerBackgroundImage.jpg";
 const happyBarCustomerInfo = {
   title: "Happy bar customer order",
   subTitle: "Happy bar order",
   image: getImage(imageName),
+  button: "Ordina!",
 };
 
 function HappyBarCustomer() {
