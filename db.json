@@ -59,6 +59,33 @@
         "quantity": 0
       },
       {
+        "id": 8,
+        "title": "Pikachu plate",
+        "image": "photo_food01_02.jpg",
+        "ingredientsIT": "Ingredienti: polenta, pesce fritto, carne, verdure fritte",
+        "ingredientsEN": "Ingredients: polenta, fried fish, meat, fried vegetables",
+        "price": 13,
+        "quantity": 0
+      },
+      {
+        "id": 9,
+        "title": "Eevee plate",
+        "image": "photo_food02_02.jpg",
+        "ingredientsIT": "Ingredienti: pane, patate fritte, salsa fatta in casa",
+        "ingredientsEN": "Ingredients: bread, french fries, homemaid sauce",
+        "price": 13,
+        "quantity": 0
+      },
+      {
+        "id": 10,
+        "title": "Snorlax plate",
+        "image": "photo_food02_03.jpg",
+        "ingredientsIT": "Ingredienti: riso alla cantonese, fritto misto di carne e verdure",
+        "ingredientsEN": "Ingredients: cantonese rice, mixed fried meat and vegetables",
+        "price": 13,
+        "quantity": 0
+      },
+      {
         "id": 7,
         "title": "Eevee cake",
         "image": "Photo-IG-copy-1024x1024.jpeg",
@@ -68,12 +95,12 @@
         "quantity": 0
       },
       {
-        "id": 8,
-        "title": "Pikachu plate",
-        "image": "photo_food01_02.jpg",
-        "ingredientsIT": "Ingredienti: polenta, pesce fritto, carne, verdure fritte",
-        "ingredientsEN": "Ingredients: polenta, fried fish, meat, fried vegetables",
-        "price": 13,
+        "id": 11,
+        "title": "Dugtramezzino",
+        "image": "PokemonCafeMixDugtrioSandwich12.jpg",
+        "ingredientsIT": "Ingredienti: salame, pane, insalata, pomodoro, salsa fatta in casa",
+        "ingredientsEN": "Ingredients: salami, bread, lettuce, tomato, homemade sauce",
+        "price": 15,
         "quantity": 0
       }
     ]
