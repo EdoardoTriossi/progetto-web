@@ -3,6 +3,12 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import "./fonts/dogica.ttf";
+import "./fonts/dogicabold.ttf";
+import "./fonts/dogicapixel.ttf";
+import "./fonts/dogicapixelbold.ttf";
+import "./fonts/PokemonHollow.ttf";
+import "./fonts/PokemonSolid.ttf";
 
 // React bootstrap configuration
 import "react-bootstrap/dist/react-bootstrap.min";

@@ -6,24 +6,52 @@ import ListGroup from "react-bootstrap/ListGroup";
 import Row from "react-bootstrap/Row";
 import Stack from "react-bootstrap/Stack";
 import { getImage } from "src/utilities/getImage";
+import "../../HappyBar.css";
+import "src/index.css";
 
 function Dish({ dish, onIncrement, onDecrement, onClear }) {
   return (
     <div style={{ backgroundColor: ".bg-light" }}>
-      <Card>
-        <Card.Header className="text-center">{dish.title}</Card.Header>
+      <Card style={{ height: "100%" }}>
+        <Card.Header 
+          className="text-center" 
+          style={{ 
+            height: "90px", 
+            alignItems: "center", 
+            display: "flex",
+            justifyContent: "center",
+            paddingTop: "20px",
+            }}>
+          <h3> {dish.title}</h3>
+        </Card.Header>
         <Card.Img
           variant="top"
           src={getImage(dish.image)}
-          style={{ width: "100%", height: "30vh", objectFit: "cover" }}
+          style={{ width: "100%", height: "350px", objectFit: "cover" }}
         ></Card.Img>
-        <Card.Body style={{ height: "10%" }}>
-          <ListGroup className="list-group-flush" style={{ height: "5%" }}>
-            <ListGroup.Item>{dish.ingredientsIT}</ListGroup.Item>
-            <ListGroup.Item>{dish.ingredientsEN}</ListGroup.Item>
+        <Card.Body>
+          <ListGroup
+            className="list-group-flush"
+            style={{
+              height: "50%",
+              textAlign: "center",
+            }}
+          >
+            <ListGroup.Item style={{ height: "50%" }}>
+              <p style={{ paddingTop: "2%", }}>{dish.ingredientsIT}</p>
+            </ListGroup.Item>
+            <ListGroup.Item style={{ height: "50%" }}>
+              <p style={{ paddingTop: "2%", }}>{dish.ingredientsEN}</p>
+            </ListGroup.Item>
           </ListGroup>
           <Container fluid="true">
-            <Row className="mb-x">
+            <Row
+              className="mb-x"
+              style={{
+                paddingLeft: "7%",
+                paddingTop: "3%",
+              }}
+            >
               <Col className="mb-3">
                 <Stack direction="horizontal">
                   <Button
@@ -49,13 +77,35 @@ function Dish({ dish, onIncrement, onDecrement, onClear }) {
                   </Button>
                 </Stack>
               </Col>
-              <Col>
-                <p className="pricing-card-title">Prezzo: € {dish.price}</p>
+              <Col
+                style={{
+                  padding: "4%",
+                  //textAlignVertical: "center",
+                  textAlign: "center",
+                }}
+              >
+                <p>Prezzo: € {dish.price}</p>
               </Col>
-              <Col>
-                <p className="h3">Nr: {dish.quantity}</p>
+            </Row>
+            <Row>
+              {" "}
+              <Col
+                style={{
+                  padding: "1%",
+                  paddingRight: "7%",
+                  //textAlignVertical: "center",
+                  textAlign: "center",
+                }}
+              >
+                <h3>Nr: {dish.quantity}</h3>
               </Col>
-              <Col>
+              <Col
+                style={{
+                  padding: "1%",
+                  //textAlignVertical: "center",
+                  textAlign: "center",
+                }}
+              >
                 <p className="pricing-card-title">
                   Total: € {parseInt(dish.quantity) * parseInt(dish.price)}
                 </p>

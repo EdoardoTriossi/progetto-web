@@ -53,74 +53,57 @@
         "id": 6,
         "title": "Meat soup",
         "image": "meat-soup-pexels-cats-coming-1907244.jpg",
-        "ingredientsIT": "Ingredienti: carne, verdure e spagetti",
+        "ingredientsIT": "Ingredienti: carne, verdure e spaghetti",
         "ingredientsEN": "Ingredients: meat, vegetables and noodles",
         "price": 12,
+        "quantity": 0
+      },
+      {
+        "id": 8,
+        "title": "Pikachu plate",
+        "image": "photo_food01_02.jpg",
+        "ingredientsIT": "Ingredienti: polenta, pesce fritto, carne, verdure fritte",
+        "ingredientsEN": "Ingredients: polenta, fried fish, meat, fried vegetables",
+        "price": 13,
+        "quantity": 0
+      },
+      {
+        "id": 9,
+        "title": "Eevee plate",
+        "image": "photo_food02_02.jpg",
+        "ingredientsIT": "Ingredienti: pane, patate fritte, salsa fatta in casa",
+        "ingredientsEN": "Ingredients: bread, french fries, homemaid sauce",
+        "price": 13,
+        "quantity": 0
+      },
+      {
+        "id": 10,
+        "title": "Snorlax plate",
+        "image": "photo_food02_03.jpg",
+        "ingredientsIT": "Ingredienti: riso alla cantonese, fritto misto di carne e verdure",
+        "ingredientsEN": "Ingredients: cantonese rice, mixed fried meat and vegetables",
+        "price": 13,
+        "quantity": 0
+      },
+      {
+        "id": 7,
+        "title": "Eevee cake",
+        "image": "Photo-IG-copy-1024x1024.jpeg",
+        "ingredientsIT": "Ingredienti: quelli di una torta (sorpresa)",
+        "ingredientsEN": "Ingredients: those of a cake (surprise)",
+        "price": 12,
+        "quantity": 0
+      },
+      {
+        "id": 11,
+        "title": "Dugtramezzino",
+        "image": "PokemonCafeMixDugtrioSandwich12.jpg",
+        "ingredientsIT": "Ingredienti: salame, pane, insalata, pomodoro, salsa fatta in casa",
+        "ingredientsEN": "Ingredients: salami, bread, lettuce, tomato, homemade sauce",
+        "price": 15,
         "quantity": 0
       }
     ]
   },
-  "orders": [
-    {
-      "id": "cc2b19f0-6cb4-4d7e-ae59-0d6463d527d7",
-      "table": "0",
-      "total": 81,
-      "dishes": [
-        {
-          "id": 1,
-          "title": "Tai Shrimps",
-          "image": "tai-shrimps-pexels-cats-coming-699544.jpg",
-          "ingredientsIT": "Ingredienti: gamberetti",
-          "ingredientsEN": "Ingredients: shrimps",
-          "price": 12,
-          "quantity": 1
-        },
-        {
-          "id": 2,
-          "title": "Bug burgher",
-          "image": "big-burger-pexels-rajesh-tp-1633578.jpg",
-          "ingredientsIT": "Ingredienti: pane, carne, insalata",
-          "ingredientsEN": "Ingredients: bread, meat, salad",
-          "price": 15,
-          "quantity": 1
-        },
-        {
-          "id": 3,
-          "title": "Royal Chicken Taco",
-          "image": "chicken-taco-pexels-pixabay-461198.jpg",
-          "ingredientsIT": "Ingredienti: pollo e taco",
-          "ingredientsEN": "Ingredients: chicken and taco",
-          "price": 9,
-          "quantity": 1
-        },
-        {
-          "id": 4,
-          "title": "Sliced beef",
-          "image": "sliced-beef-pexels-kasumi-loffler-3535383.jpg",
-          "ingredientsIT": "Ingredienti: manzo e patate",
-          "ingredientsEN": "Ingredients: beef and potatoes",
-          "price": 25,
-          "quantity": 1
-        },
-        {
-          "id": 5,
-          "title": "Pumpkin cream",
-          "image": "pumpkin-cream-pexels-foodie-factor-539451.jpg",
-          "ingredientsIT": "Ingredienti: zucca",
-          "ingredientsEN": "Ingredients: pumpkin",
-          "price": 8,
-          "quantity": 1
-        },
-        {
-          "id": 6,
-          "title": "Meat soup",
-          "image": "meat-soup-pexels-cats-coming-1907244.jpg",
-          "ingredientsIT": "Ingredienti: carne, verdure e spagetti",
-          "ingredientsEN": "Ingredients: meat, vegetables and noodles",
-          "price": 12,
-          "quantity": 1
-        }
-      ]
-    }
-  ]
+  "orders": []
 }

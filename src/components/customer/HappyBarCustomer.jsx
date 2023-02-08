@@ -5,13 +5,14 @@ import NavBar from "../NavBar";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Order from "./components/Order";
-import "./HappyBarCustomer.css";
+import "../HappyBar.css";
 
 const imageName = "happyBarCustomerBackgroundImage.jpg";
 const happyBarCustomerInfo = {
   title: "Happy bar customer order",
   subTitle: "Happy bar order",
   image: getImage(imageName),
+  button: "Ordina!",
 };
 
 function HappyBarCustomer() {
@@ -37,16 +38,20 @@ function HappyBarCustomer() {
     return data;
   };
 
+  const resetTotal = (_order) => {
+    _order.total = _order.dishes.reduce(
+      (accumulator, dish) => accumulator + dish.quantity * dish.price,
+      0
+    );
+  }
+
   const dishIncrement = (id) => {
     let _order = { ...order };
     _order.dishes = _order.dishes.map((dish) =>
       dish.id === id ? { ...dish, quantity: dish.quantity + 1 } : dish
     );
 
-    _order.total = _order.dishes.reduce(
-      (accumulator, dish) => accumulator + dish.quantity * dish.price,
-      0
-    );
+    resetTotal(_order);
 
     setOrder(_order);
   };
@@ -62,6 +67,8 @@ function HappyBarCustomer() {
         : dish
     );
 
+    resetTotal(_order);
+
     setOrder(_order);
   };
 
@@ -70,6 +77,8 @@ function HappyBarCustomer() {
     _order.dishes = _order.dishes.map((dish) =>
       dish.id === id ? { ...dish, quantity: 0 } : dish
     );
+
+    resetTotal(_order);
 
     setOrder(_order);
   };

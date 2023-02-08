@@ -56,10 +56,10 @@ const NavBar = ({ info }) => {
           </div>
         </nav>
         <div className="text-box">
-          <h1>{info.title}</h1>
-          <p>{info.subTitle}</p>
+          <h1 className="title">{info.title}</h1>
+          <p className="title">{info.subTitle}</p>
           <a href="#hero-btn" className="hero-btn">
-            To know more
+            {info.button}
           </a>
         </div>
         <a className="backward" href="#top">
