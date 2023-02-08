@@ -134,6 +134,7 @@ function Home() {
       {/* mostUsedFramework */}
       <section className="mostUsedFramework">
         <h1>Most popular frameworks</h1>
+        <p>Clicca sulle icone per essere portato al repository "GitHub" dei framework selezionati.</p>
         <div className="row">
           <a href="https://github.com/facebook/react" className="col">
             <img src={getImage(reactLogo)} alt="React" />
@@ -161,7 +162,7 @@ function Home() {
         <div className="row">
           <h2>Google trends</h2>
           <p>
-            cosa cè nel grafico, e che aggiornato
+            Grafico estratto da "Google Trends" che mostra l'utilizzo dei framework negli anni, aggiornato in tempo reale.
           </p>
           <a href="https://trends.google.it/trends/explore?date=today%2012-m,today%2012-m,today%2012-m&geo=,,&q=%2Fm%2F012l1vxv,%2Fg%2F11c6w0ddw9,%2Fg%2F11c0vmgx5d">
             <img src={getImage(googleTrends)} alt="" />
@@ -171,7 +172,7 @@ function Home() {
         <div className="row">
           <h2>Stack Overflow Trends</h2>
           <p>
-            numero di ricerche fatte per ciascun framework con stack Overflow
+            Grafico estratto da "Stack Overflow" che illustra il quantitativo di quesiti sui framework.
           </p>
           <a href="https://insights.stackoverflow.com/trends?tags=reactjs%2Cangular%2Cvue.js">
             <img src={getImage(stackoverflowTrends)} alt="" />
